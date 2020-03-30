@@ -41,9 +41,29 @@ const nthTriangularNumber = function(n) {
   console.log(nthTriangularNumber(4));
 
 //string splitter drill
-
+function stringSplitter(str, separator='/') {
+    if(str.length === 0){
+      return [''];
+    }
+  
+    const char = str[0];
+    if(char === separator){
+      return ['', ...stringSplitter(str.slice(1))];
+    }
+    const newArray = stringSplitter(str.slice(1));
+    newArray[0] = char + newArray[0];
+    return newArray;
+  }
+  console.log(stringSplitter('02/20/2020'));
 
 //fibonacci
+function fibonacci(num) {
+    if (num <= 1) {
+        return num;
+    }
+    return fibonacci(num-1) + fibonacci(num-2)
+}
+console.log(fibonacci(13))
 
 
 //factorial
