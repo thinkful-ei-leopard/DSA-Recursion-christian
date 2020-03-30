@@ -31,4 +31,20 @@ const reverseString = function(string) {
 }
 reverseString("hello")
 
+//nth triangular number drill
+const tri = function(n) {
+    if(n <= 1) {
+      return n;
+    } 
+    else {
+     
+      return n + tri(n - 1);
+    }
+  }
+  tri(6)
+
+  //string splitter drill
+  
+
+
 
