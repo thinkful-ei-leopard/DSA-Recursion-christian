@@ -32,19 +32,43 @@ const reverseString = function(string) {
 reverseString("hello")
 
 //nth triangular number drill
-const tri = function(n) {
-    if(n <= 1) {
-      return n;
-    } 
-    else {
-     
-      return n + tri(n - 1);
+const nthTriangularNumber = function(n) {
+    if (n === 1) {
+      return 1;
     }
+    return n + nthTriangularNumber(n - 1);
   }
-  tri(6)
+  console.log(nthTriangularNumber(4));
 
-  //string splitter drill
-  
+//string splitter drill
 
+
+//fibonacci
+
+
+//factorial
+
+
+//find a way out of the maze
+
+
+//find all the ways out of the maze
+
+
+//anagrams
+
+
+//organization chart
+
+
+//binary drill
+ function binaryRep(num) {
+     if(num === 0) {
+         return '';
+     }
+     const binary = num % 2;
+     return binaryRep(Math.floor(num/2)) + binary
+ }
+ binaryRep(25)
 
 
