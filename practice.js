@@ -67,10 +67,26 @@ console.log(fibonacci(13))
 
 
 //factorial
-
+function factorial(num) {
+    if (num === 0) {
+        return 1;
+    }
+    return num * factorial(num-1);
+}
+console.log(factorial(5))
 
 //find a way out of the maze
+let maze = [
+    [' ', ' ', ' ', '*', ' ', ' ', ' '],
+    ['*', '*', ' ', '*', ' ', '*', ' '],
+    [' ', ' ', ' ', ' ', ' ', ' ', ' '],
+    [' ', '*', '*', '*', '*', '*', ' '],
+    [' ', ' ', ' ', ' ', ' ', ' ', 'e']
+];
 
+function escape() {
+    
+}
 
 //find all the ways out of the maze
 
@@ -89,6 +105,6 @@ console.log(fibonacci(13))
      const binary = num % 2;
      return binaryRep(Math.floor(num/2)) + binary
  }
- binaryRep(25)
+ console.log(binaryRep(25))
 
 
