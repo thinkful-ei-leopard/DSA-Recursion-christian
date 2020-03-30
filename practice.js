@@ -22,6 +22,13 @@ powerCalc(10, 2)
 powerCalc(10, -2)
 
 //reverse string drill
-
+const reverseString = function(string) {
+    if(string === "") {
+        return;
+    }
+        console.log(reverseString(string.substr(1)) + string.charAt(0));
+        return;
+}
+reverseString("hello")
 
 
